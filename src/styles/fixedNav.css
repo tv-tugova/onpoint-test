@@ -1,0 +1,22 @@
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.logo-icon {
+  position: absolute;
+  top: 25px;
+  left: 66px;
+  pointer-events: auto;
+}
+
+.branding-logo {
+  position: absolute;
+  top: 743px;
+  left: 69px;
+}
