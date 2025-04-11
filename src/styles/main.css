@@ -8,10 +8,9 @@ body {
   font-family: Arial, sans-serif;
 }
 
-img {
+.scaled-img {
   transform: scale(0.5);
   transform-origin: top left;
-  display: block;
 }
 
 .slider-container {
@@ -37,25 +36,4 @@ img {
   height: 768px;
   flex-shrink: 0;
   overflow: hidden;
-}
-
-.floating-element {
-  position: absolute;
-  top: 300px;
-  left: 600px;
-  animation: float 10s ease-in-out infinite;
-}
-
-.floating-element img {
-  width: 120px;
-}
-
-@keyframes float {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(50px);
-  }
 }

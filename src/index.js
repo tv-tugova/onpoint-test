@@ -1,9 +1,12 @@
 import "./styles/main.css";
 import "./styles/fixedNav.css";
+import "./styles/slide1.css";
 
 document.addEventListener("DOMContentLoaded", () => {
   const sliderWrapper = document.querySelector(".slider-wrapper");
   const slides = document.querySelectorAll(".slide");
+  const title = document.querySelector(".logo-icon");
+  const nextButton = document.querySelector(".slide-1-next-button");
 
   let currentSlide = 0;
   const totalSlides = slides.length;
@@ -80,6 +83,15 @@ document.addEventListener("DOMContentLoaded", () => {
   sliderWrapper.addEventListener("mouseup", touchEnd);
   sliderWrapper.addEventListener("mouseleave", () => {
     if (isDragging) touchEnd();
+  });
+
+  // Переход с заголовка на первый слайд
+  title.addEventListener("click", () => {
+    goToSlide(0);
+  });
+  // Переход на второй слайд по нажатию кнопки
+  nextButton.addEventListener("click", () => {
+    goToSlide(1);
   });
 
   // Инициализация первого слайда

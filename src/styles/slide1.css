@@ -1,0 +1,159 @@
+.intro-text {
+  position: absolute;
+  top: 190px;
+  left: 65px;
+  z-index: 5;
+  color: #000;
+  font-family: "Gilroy", sans-serif;
+}
+
+.intro-small {
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 2px;
+  margin: 0;
+  font-family: "DINPro-Light", sans-serif;
+}
+
+.intro-large p {
+  font-size: 117px;
+  line-height: 117px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.intro-large strong {
+  font-weight: 900;
+}
+
+.slide-1-fixed-elements img {
+  position: absolute;
+  pointer-events: auto;
+}
+
+.s1e1 {
+  top: 72px;
+  left: 0px;
+}
+.s1e2 {
+  top: 30px;
+  left: 917px;
+}
+.s1e3 {
+  top: 631px;
+  left: 347px;
+}
+.s1e4 {
+  top: 155px;
+  left: 432px;
+  z-index: 10;
+}
+.s1e5 {
+  top: 593px;
+  left: 0px;
+}
+
+.slide-1-floating-elements {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.slide-1-floating-elements img {
+  position: absolute;
+  /* animation-duration: 10s; */
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  pointer-events: auto;
+}
+
+.f1e1 {
+  top: 503px;
+  left: 22px;
+  animation: float1 5s;
+}
+.f1e2 {
+  top: 61px;
+  left: 744px;
+  animation: float2 7s;
+}
+.f1e3 {
+  top: 200px;
+  left: 861px;
+  animation: float3 8s;
+}
+.f1e4 {
+  top: 641px;
+  left: 542px;
+  animation: float4 4s;
+}
+
+@keyframes float1 {
+  0%,
+  100% {
+    transform: scale(0.5) translate(0, 0);
+  }
+  50% {
+    transform: scale(0.5) translate(30px, -25px);
+  }
+}
+
+@keyframes float2 {
+  0%,
+  100% {
+    transform: scale(0.5) translate(0, 0);
+  }
+  50% {
+    transform: scale(0.5) translate(-28px, 26px);
+  }
+}
+
+@keyframes float3 {
+  0%,
+  100% {
+    transform: scale(0.5) translate(0, 0);
+  }
+  50% {
+    transform: scale(0.5) translate(35px, 25px);
+  }
+}
+
+@keyframes float4 {
+  0%,
+  100% {
+    transform: scale(0.5) translate(0, 0);
+  }
+  50% {
+    transform: scale(0.5) translate(34px, 22px);
+  }
+}
+
+.slide-1-next-button {
+  position: absolute;
+  top: 464px;
+  left: 627px;
+  width: 288px;
+  height: 80px;
+  z-index: 10;
+  background-color: #ff6a9f;
+  border-radius: 80px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-family: "DINPro-Light", sans-serif;
+}
+
+.next-button-icon {
+  width: 62.5px;
+  height: 62.5px;
+  margin-left: 10px;
+}
+
+.next-button-text {
+  font-size: 26px;
+  letter-spacing: 2.5px;
+  color: #000;
+  margin-left: 12px;
+}
