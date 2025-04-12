@@ -28,7 +28,6 @@
 
 .slide-1-fixed-elements img {
   position: absolute;
-  pointer-events: auto;
 }
 
 .s1e1 {
@@ -57,16 +56,13 @@
   position: absolute;
   top: 0;
   left: 0;
-  pointer-events: none;
   z-index: 5;
 }
 
 .slide-1-floating-elements img {
   position: absolute;
-  /* animation-duration: 10s; */
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  pointer-events: auto;
 }
 
 .f1e1 {

@@ -16,7 +16,7 @@ body {
 .slider-container {
   width: 1024px;
   height: 768px;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .slider-wrapper {
@@ -28,6 +28,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  overflow: visible;
 }
 
 .slide {
@@ -35,5 +36,5 @@ body {
   width: 1024px;
   height: 768px;
   flex-shrink: 0;
-  overflow: hidden;
+  overflow: visible;
 }
