@@ -1,0 +1,103 @@
+.slide-3-overlay {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 1024px;
+  height: 768px;
+  background-image: url("../assets/images/opacity-mask.png");
+  z-index: 1;
+  display: flex;
+  transition: opacity 0.5s ease;
+}
+
+.slide-3-overlay.hidden {
+  display: none;
+}
+
+.slide-3-modal {
+  position: absolute;
+  top: 123px;
+  left: 140px;
+  width: 534px;
+  height: 333px;
+  background: #fff;
+  border-radius: 40px;
+  padding: 200px 40px 40px 200px;
+  position: relative;
+  font-family: "DINPro", sans-serif;
+}
+
+.modal-close {
+  position: absolute;
+  top: 32px;
+  right: -5px;
+  cursor: pointer;
+}
+
+.modal-title {
+  font-size: 24px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.modal-brand {
+  font-size: 72px;
+  font-weight: 300;
+  margin-bottom: 40px;
+  letter-spacing: 6px;
+}
+
+.modal-brand span {
+  font-weight: 700;
+}
+
+.modal-slider {
+  overflow: hidden;
+}
+
+.modal-slide {
+  display: none;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 20px;
+  color: #222;
+}
+
+.modal-slide.active {
+  display: flex;
+}
+
+.modal-number {
+  color: #7ec7f5;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.modal-text {
+  font-size: 24px;
+}
+
+.modal-pagination {
+  display: flex;
+  gap: 12px;
+  margin-top: 54px;
+  height: 24px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 4px;
+  vertical-align: middle;
+}
+
+.dot.active {
+  background: #ff6699;
+}
+
+.hidden {
+  display: none;
+}

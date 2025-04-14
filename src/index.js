@@ -3,6 +3,7 @@ import "./styles/fixedNav.css";
 import "./styles/slide1.css";
 import "./styles/slide2.css";
 import "./styles/slide3.css";
+import "./styles/modal.css";
 
 document.addEventListener("DOMContentLoaded", () => {
   const sliderWrapper = document.querySelector(".slider-wrapper");
@@ -11,7 +12,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const nextButton = document.querySelector(".slide-1-next-button");
   const scrollContainer = document.querySelector(".message-scroll");
   const scrollThumb = document.querySelector(".scroll-thumb");
+  const plusButton = document.querySelector(".slide-3-button");
+  const modalOverlay = document.querySelector(".slide-3-overlay");
+  const modalSlides = document.querySelectorAll(".modal-slide");
+  const dots = document.querySelectorAll(".dot");
+  const slide3Title = document.querySelector(".slide-3-title");
+  const originalTitle = slide3Title.textContent;
+  let modalIndex = 0;
 
+  // Переменные слайдов
   let currentSlide = 0;
   const totalSlides = slides.length;
   let slideWidth = slides[0].offsetWidth;
@@ -176,4 +185,34 @@ document.addEventListener("DOMContentLoaded", () => {
   scrollThumb.ondragstart = () => false;
   document.addEventListener("mousemove", (e) => onDragging(e.clientY));
   document.addEventListener("mouseup", stopDragging);
+
+  // Попап
+  plusButton.addEventListener("click", () => {
+    modalOverlay.classList.remove("hidden");
+    plusButton.classList.add("hidden");
+    slide3Title.textContent = "ПРЕИМУЩЕСТВА";
+  });
+
+  document.querySelector(".modal-close").addEventListener("click", () => {
+    modalOverlay.classList.add("hidden");
+    plusButton.classList.remove("hidden");
+    slide3Title.textContent = originalTitle;
+  });
+
+  document.querySelector(".prev-slide").addEventListener("click", () => {
+    modalIndex = (modalIndex - 1 + modalSlides.length) % modalSlides.length;
+    updateModalSlides();
+  });
+
+  document.querySelector(".next-slide").addEventListener("click", () => {
+    modalIndex = (modalIndex + 1) % modalSlides.length;
+    updateModalSlides();
+  });
+
+  function updateModalSlides() {
+    modalSlides.forEach((slide, i) => {
+      slide.classList.toggle("active", i === modalIndex);
+      dots[i].classList.toggle("active", i === modalIndex);
+    });
+  }
 });
