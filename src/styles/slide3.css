@@ -1,0 +1,274 @@
+.slide-3-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 170px;
+  left: 225px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.slide-3-title {
+  padding-left: 112px;
+  font-size: 24px;
+  letter-spacing: 2px;
+  color: #242424;
+}
+
+.slide-3-brand {
+  padding-left: 108px;
+  font-size: 72px;
+  font-weight: 300;
+  letter-spacing: 6px;
+  color: #242424;
+  margin-bottom: 98px;
+}
+
+.slide-3-brand span {
+  font-weight: 700;
+}
+
+.slide-3-cards {
+  display: flex;
+  gap: 40px;
+}
+
+.info-card-left {
+  position: relative;
+  width: 263px;
+  height: 185px;
+  background: #fff;
+  padding: 40px 40px 40px 110px ;
+  border-radius: 32px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+  font-size: 24px;
+  line-height: 1.4;
+  color: #222;
+  z-index: -10;
+}
+
+.info-card-right {
+  position: relative;
+  width: 183px;
+  height: 70px;
+  background: #fff;
+  padding: 40px 40px 40px 40px ;
+  border-radius: 32px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+  font-size: 24px;
+  line-height: 1.4;
+  color: #222;
+}
+
+.icon-wrapper-left {
+  position: absolute;
+  top: -32px;
+  left: 110px;
+  width: 64px;
+  height: 64px;
+}
+
+.icon-wrapper-right {
+  position: absolute;
+  top: -32px;
+  left: 40px;
+  width: 64px;
+  height: 64px;
+}
+
+.icon-wrapper-left img {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+}
+
+.icon-wrapper-right img {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+}
+
+.bottle {
+  position: absolute;
+  top: 80px;
+  left: 50px;
+  z-index: 1;
+}
+
+.slide-3-floating-elements-front {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slide-3-floating-elements-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slide-3-floating-elements-front img {
+  position: absolute;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  z-index: 5;
+}
+
+.slide-3-floating-elements-back img {
+  position: absolute;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  z-index: -5;
+}
+
+.f3e1 {
+  top: 155px;
+  left: 184px;
+  animation: float1 5s;
+}
+.f3e2 {
+  top: 703px;
+  left: 183px;
+  animation: float2 7s;
+}
+.f3e3 {
+  top: 453px;
+  left: 10px;
+  animation: float3 8s;
+}
+.f3e4 {
+  top: 553px;
+  left: 25px;
+  animation: float4 4s;
+}
+
+.f3e5 {
+  top: 212px;
+  left: 77px;
+  animation: float5 5s;
+}
+
+.f3e6 {
+  top: 317px;
+  left: 186px;
+  animation: float6 7s;
+}
+
+.f3e7 {
+  top: 65px;
+  left: 197px;
+  animation: float7 8s;
+}
+
+.f3e8 {
+  top: 591px;
+  left: 242px;
+  animation: float8 4s;
+}
+
+@keyframes float1 {
+  0%,
+  100% {
+    transform: scale(0.5) translate(0, 0);
+  }
+  50% {
+    transform: scale(0.5) translate(30px, -25px);
+  }
+}
+
+@keyframes float2 {
+  0%,
+  100% {
+    transform: scale(0.5) translate(0, 0);
+  }
+  50% {
+    transform: scale(0.5) translate(-28px, 26px);
+  }
+}
+
+@keyframes float3 {
+  0%,
+  100% {
+    transform: scale(0.5) translate(0, 0);
+  }
+  50% {
+    transform: scale(0.5) translate(35px, 25px);
+  }
+}
+
+@keyframes float4 {
+  0%,
+  100% {
+    transform: scale(0.5) translate(0, 0);
+  }
+  50% {
+    transform: scale(0.5) translate(34px, 22px);
+  }
+}
+
+@keyframes float5 {
+  0%, 100% {
+    transform: scale(0.5) translate(0, 0);
+  }
+  50% {
+    transform: scale(0.5) translate(-20px, -30px);
+  }
+}
+
+@keyframes float6 {
+  0%, 100% {
+    transform: scale(0.5) translate(0, 0);
+  }
+  50% {
+    transform: scale(0.5) translate(25px, 18px);
+  }
+}
+
+@keyframes float7 {
+  0%, 100% {
+    transform: scale(0.5) translate(0, 0);
+  }
+  50% {
+    transform: scale(0.5) translate(-15px, 22px);
+  }
+}
+
+@keyframes float8 {
+  0%, 100% {
+    transform: scale(0.5) translate(0, 0);
+  }
+  50% {
+    transform: scale(0.5) translate(10px, -18px);
+  }
+}
+
+.slide-3-button {
+  position: absolute;
+  top: 564px;
+  left: 680px;
+  width: 263px;
+  height: 80px;
+  z-index: 10;
+  background-color: #ff6a9f;
+  border-radius: 80px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-family: "DINPro-Light", sans-serif;
+}
+
+.plus-button-icon {
+  width: 62.5px;
+  height: 62.5px;
+  margin-left: 10px;
+}
+
+.plus-button-text {
+  font-size: 26px;
+  letter-spacing: 2.5px;
+  color: #000;
+  margin-left: 12px;
+}

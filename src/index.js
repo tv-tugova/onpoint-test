@@ -2,6 +2,7 @@ import "./styles/main.css";
 import "./styles/fixedNav.css";
 import "./styles/slide1.css";
 import "./styles/slide2.css";
+import "./styles/slide3.css";
 
 document.addEventListener("DOMContentLoaded", () => {
   const sliderWrapper = document.querySelector(".slider-wrapper");
